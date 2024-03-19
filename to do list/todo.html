@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>To-Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Dosis:wght@200&family=M+PLUS+Rounded+1c&family=Poppins&display=swap" rel="stylesheet">
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+      *
+      {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .container
+      {
+        min-height: 100vh;
+        background-color:rgb(197, 143, 27);
+        width: 100%;
+        padding: 12px;
+      }
+
+      .box
+      {
+        margin: 100px auto 10px;
+        background-color:rgb(40, 47, 54);
+        max-width: 570px;
+        min-height: 600px;
+        max-height: 100vh;
+        padding: 40px 30px 70px;
+        border-radius: 12px;
+      }
+      .tit
+      {
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        color: rgb(218, 214, 214);
+      }
+      h3
+      {
+        font-weight:lighter;
+        color: rgb(92, 92, 92);
+      }
+      #addtask
+      {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+      #addtask input
+      {
+        width:80%;
+        border: none;
+        outline: none;
+        background-color: rgb(21, 23, 25);
+        border:none;
+        color:white;
+        padding: 10px;
+      }
+      #addtask button
+      {
+        margin-left: 6px;
+        background-color: white;
+        border:none;
+        outline: none;
+        border-radius:2rem;
+        cursor: pointer;
+        color:rgb(73, 25, 120);
+        padding-left: 1 rem;
+        font-size:1.8rem;
+      }
+      .select
+      {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      .ion
+      {
+        margin-top: 2px;
+      }
+      #addtask button:hover
+      {
+        color:white;
+        background-color:rgb(73, 25, 120);
+      }
+      .task
+      {
+        color:white;
+        display: flex;
+        justify-content: space-between;
+        outline:none;
+        margin-top: 12px;
+        padding:15px;
+        font-family: 'Poppins', sans-serif;
+      }
+      .actions button
+      {
+        color:rgb(122, 37, 144);
+        font-size:1.3rem;
+        background: none;
+        border:none;
+        outline:none;
+        cursor: pointer;
+      }
+      .content
+      {
+        margin-left: 24px;
+      }
+      .actions button:hover{
+        color:white;
+      }
+      .actions
+      {
+        margin-right: 15px;
+      }
+      .completed
+      {
+        text-decoration: line-through;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <section class="tit">
+        <h1>Thursday</h1>
+        <h3>Mar 23,2023</h3>
+        </section>
+            <div id="addtask">
+            <input type="text" placeholder="Task to be done">
+            <button id="todo-button"><ion-icon name="add-circle" class="ion"></ion-icon></button>
+          </div>
+              <div id="todo-contain"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
